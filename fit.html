@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+legend {
+  padding: 0.5em;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+output {
+  font-weight: bold;
+}
+
+</style>
+<body>
+    
+    <fieldset>
+        <legend>Calculate Calories Burned</legend>
+        <div class="form-group row">
+          <label for="activity" class="col-form-label col-sm-2">Activity:</label>
+          <div class="col-sm-3">
+            <select class="form-control" id="activity">
+              <option value="walking">Walking</option>
+              <option value="cycling">Cycling</option>
+              <option value="swimming">Swimming</option>
+              <option value="running">Running</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <select class="form-control" id="intensity">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="duration" class="col-form-label col-sm-2">Duration (minutes):</label>
+          <div class="col-sm-3">
+            <input type="number" class="form-control" id="duration" value="30">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="result" class="col-form-label col-sm-2"><a href="cal.html"> Burned:</label></a>
+          <div class="col-sm-3">
+            <output class="form-control" id="result"></output>
+          </div>
+        </div>
+      </fieldset>
+    
+</body>
+</html>
